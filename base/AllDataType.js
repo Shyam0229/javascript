@@ -73,7 +73,6 @@
 
 
 
-
 // ..............MEMORY......
     //   2 TYPES 
             // 1. STACK(PRIMITIVE)-CPOY OF VALUE
@@ -98,5 +97,7 @@
             
             console.log(userone.email);
             console.log(usertwo.email);
+
+
             
             
