@@ -13,15 +13,15 @@
    const temp =null
    let emailAddress=undefined 
    
-   console.log(typeof temp);   // "object"
-   console.log(typeof emailAddress); // "undefined"
+//    console.log(typeof temp);   // "object"
+//    console.log(typeof emailAddress); // "undefined"
    
 
    const id =Symbol('123')
    const anotherId = Symbol('123')
 
-   console.log(typeof id); // "symbol"
-   console.log(typeof anotherId); // "symbol"
+//    console.log(typeof id); // "symbol"
+//    console.log(typeof anotherId); // "symbol"
    
    
 //    console.log(id===anotherId);
@@ -52,7 +52,7 @@
 
       const heros =["shyam","kumar","malik"] 
 
-     console.log(typeof heros);   // "object"
+    //  console.log(typeof heros);   // "object"
      
       
       let obj1 = {
@@ -61,7 +61,7 @@
       }
    
 
-      console.log(typeof obj1); // "object"
+    //   console.log(typeof obj1); // "object"
       
 
  const  myfunction = function() {
@@ -69,4 +69,34 @@
     
     
 }
-console.log(typeof myfunction); // "object function "
+// console.log(typeof myfunction); // "object function "
+
+
+
+
+// ..............MEMORY......
+    //   2 TYPES 
+            // 1. STACK(PRIMITIVE)-CPOY OF VALUE
+            // 2. HEAP(NON-PRIMITIE)-ADDRESS REFERENCE 
+
+
+            let myname ="shyam"
+            let anotherName=myname
+            anotherName="sujoy"
+            // console.log(anotherName);
+            // console.log(myname);
+
+
+            let userone ={
+                email:"xyz@gmail.com",
+                upi:"user@ybl"
+            }
+
+            let usertwo = userone
+
+            usertwo.email="shyam@gmail.com"
+            
+            console.log(userone.email);
+            console.log(usertwo.email);
+            
+            
