@@ -31,18 +31,29 @@ const othernumber4 =1000000000000000
 
 //+++++++++++++++ MATH ++++++++++++++
 
-console.log(Math);  // Object [Math] {}
+// console.log(Math);  // Object [Math] {}
 
-console.log(Math.abs(-4)); //4   abs is used in  positive valu converted
-console.log(Math.abs(10)); //10
-
-
-console.log(Math.round(4.6));  // 5  , round value 4.6 means --- 5
-
-console.log(Math.ceil(4.2)); // 5--- 4 up value  
-console.log(Math.floor(4.2)); //4----- . of less value
+// console.log(Math.abs(-4)); //4   abs is used in  positive valu converted
+// console.log(Math.abs(10)); //10
 
 
-console.log(Math.min(7,5,2,8,9)); // 2
-console.log(Math.max(7,5,2,8,9)); // 9
+// console.log(Math.round(4.6));  // 5  , round value 4.6 means --- 5
 
+// console.log(Math.ceil(4.2)); // 5--- 4 up value  
+// console.log(Math.floor(4.2)); //4----- . of less value
+
+
+// console.log(Math.min(7,5,2,8,9)); // 2
+// console.log(Math.max(7,5,2,8,9)); // 9
+
+// console.log(Math.random());  // this value al ways belongs in 0 - 1 , 0.1845708852183896
+// console.log((Math.random()*10) +1);  //2.6966442006202587
+
+// console.log(Math.floor(Math.random()*10) +1);  here not come in 0 ,,
+//                                                     all ways 0 up values come 
+
+
+const min=10
+const max=20
+console.log(Math.floor ( Math.random() * (max-min+1) ) +min)
+// 10 to 20 randomly within number
