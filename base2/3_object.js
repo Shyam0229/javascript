@@ -38,7 +38,18 @@ const jsUser={
 
 
 // how to change value in keys...
-Object.freeze(jsUser)  // this using are use to object freeze for no change 
-jsUser.email="kumar@gmail.com"
-console.log(jsUser);
+// Object.freeze(jsUser)  // this using are use to object freeze for no change 
+// jsUser.email="kumar@gmail.com"
+// console.log(jsUser);
 
+jsUser.gretting = function(){
+    console.log("hello js user..");
+    
+}
+
+jsUser.grettingTwo = function(){
+    console.log(`hello js user..${this["full name"]},,and my age is ${this.age}`);
+    
+}
+console.log(jsUser.gretting());
+console.log(jsUser.grettingTwo());
