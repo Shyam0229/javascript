@@ -61,10 +61,55 @@ const obj2={
 const obj5={...obj1,...obj2}
 // console.log(obj5);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); //tinderuser keys find
-console.log(Object.values(tinderUser)); //tinderuser valuse find
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); //tinderuser keys find
+// console.log(Object.values(tinderUser)); //tinderuser valuse find
 
-console.log(tinderUser.hasOwnProperty('islogin')); //true ,,
-//                                     in object .find the keys have or have not
+// console.log(tinderUser.hasOwnProperty('islogin')); //true ,,
+//                                      in object .find the keys have or have not
 
+
+// ...............destructure in object and api ..................
+
+const course ={
+    coursename:"java script",
+    price:999,
+    cousreInstructor:"xyz sir"
+}
+// console.log(course.coursename); 1st way we access
+
+
+ const {cousreInstructor}=course // this way de-structure of object
+// console.log(cousreInstructor); 
+
+
+const {cousreInstructor:sirname}=course // name change of object key and de-structure
+console.log(sirname); 
+
+
+const navbar= ({name}) => {    // java-script are de-structrue this {} backets
+
+} 
+navbar( name ="shyam"  )
+
+
+// const navbar1= (props.name) => {    // java-script are de-structrue this () backets
+//                                      // using props
+// } 
+// navbar1( name ="shyam"  )
+
+
+//...........api are json format come.........
+    // json look like that all off keys string format  
+
+    // {
+    //     "name":"shyam",
+    //     "age":18,
+    //     "id":132
+    // }
+
+    [
+        {},
+        {},
+        {}
+    ]
