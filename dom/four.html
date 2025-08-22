@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+</head>
+<body style="background-color: black; color: rgb(144, 169, 191);">
+    <ul class="language">
+        
+        <li>javaScript</li>
+
+
+    </ul>
+
+    <script>
+        function addLanguage (langName){
+            const list =   document.createElement("li")
+            list.innerHTML =`${langName}`
+            document.querySelector('.language').appendChild(list)
+        }
+        addLanguage("python")
+        addLanguage("java")
+        addLanguage("c++")
+        addLanguage("php")
+
+   
+        function addOptimizeLanguage (langName){
+            const list =   document.createElement("li")
+            list.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(list)
+            // const addText =(document.createTextNode(langName))
+            // list.appendChild(addText)
+
+        }
+        addOptimizeLanguage(" optimize language python")
+        addOptimizeLanguage(" optimize language java")
+        addOptimizeLanguage(" optimize language c++")
+        addOptimizeLanguage(" optimize language php")
+
+
+        // EDIT
+        const secondLang = document.querySelector("li:nth-child(2)")
+        // secondLang.innerHTML="kobra"
+        const newList = document.createElement('li')
+        newList.textContent="kobra"
+        secondLang.replaceWith(newList)
+
+        const FirstLang = document.querySelector("li:nth-child(1)")   // ("li :first-child")
+        // FirstLang.outerHTML= '<li>TypeScript<li>'
+
+
+    //    Remove
+    const lastlang= document.querySelector("li:last-child")
+    lastlang.remove()
+
+
+        
+          
+
+
+    </script>
+    
+</body>
+</html>
